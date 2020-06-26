@@ -1,0 +1,41 @@
+h1 {
+    font-family: Raleway;
+    float: left;
+    margin-left: 15%;
+    padding-bottom: 20px;
+
+}
+
+p {
+    
+    margin-left: 1.66%;
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 23px;
+    text-transform: uppercase;
+    border-bottom: 2px solid grey;
+    width: 30%;
+    
+}
+
+img {
+    width: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+.pic1{
+    width: 30%;
+    float: right;
+}
+
+.pic2{
+    padding-top: 80px;
+    width: 30%;
+    float: right;
+}
+
+.pic3{
+    width: 30%;
+    float: right;
+}
