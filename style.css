@@ -1,6 +1,16 @@
 body{
     margin: 25px;
 }
+
+[data-tab-content] {
+    display: none;
+  }
+  
+.active[data-tab-content] {
+    display: block;
+}
+
+
 h1 {
     font-family: Raleway;
 }
@@ -48,8 +58,18 @@ h1 {
     margin: 0;
     margin-top: 22px;
     font-size: 20px;
+    cursor: pointer;
     
   }
+
+  li:hover{
+      color: gray;
+  }
+
+  li.active {
+      color: gray;
+  }
+
   
 img {
     width: 30%;
@@ -73,7 +93,7 @@ img {
     float: right;
 }
 
-.home-text{
+#home-text{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 90px;
@@ -85,11 +105,11 @@ img {
 
 }
 
-.home-text h1{
+#home-text h1{
     color: white;
     font-size: 50px;
 }
-.home-text button{
+#home-text button{
     color: gray;
     background-color: transparent;
     border-color: white;
@@ -100,8 +120,19 @@ img {
 
 }
 
-.home-text button:hover{
+#home-text button:hover{
     color: white;
     background-color: gray;
     border-color: transparent;
+}
+
+#about{
+    margin-top: 90px;
+    background-color: blueviolet;
+}
+
+
+#about img{
+    float: left;
+    width: 50%;
 }

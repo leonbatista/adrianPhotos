@@ -7,24 +7,52 @@
     <title>Adrian Photo Blog</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
+    <script src="script.js" defer></script>
 </head>
 <body>
+
     <div class ="container-top">
         <p class= "box-name">Adrian/Silva</p>
         <div class= "box-tab">
-        <ul>
-            <li>Contact</li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li>Home</li>
-        </ul>
+            <ul class="tabs">
+                <li data-tab-target="#contact" class="tab">Contact</li>
+                <li data-tab-target="#about" class="tab">About</li>
+                <li data-tab-target="#gallery" class="tab">Gallery</li>
+                <li data-tab-target="#home-text" class="active tab">Home</li>
+            </ul>
         </div>
     </div>
     
-    <div class="home-text">
-        <h1>PEEK THROUGH THE LENS</h1>
-        <button type="button">Show More</button>
+    <div class="tab-content">
+        <div id="home-text" data-tab-content class="active">
+          <h1>PEEK THROUGH THE LENS</h1>
+          <button type="button">Show More</button>
+        </div>
+        <div id="gallery" data-tab-content>
+            <img src="photos/12.JPG" alt="">
+            <img src="photos/9.JPG" alt="">
+            <img src="photos/11.JPG" alt="">
+            <img src="photos/4.JPG" alt="">
+            <img src="photos/8.JPG" alt="">
+            <img src="photos/6.JPG" alt="">
+            <img src="photos/7.JPG" alt="">
+            <img src="photos/10.JPG" alt="">
+            <img src="photos/1.JPG" alt="">
+            <img class="pic1" src="photos/5.JPG" alt="">
+            <img class="pic2" src="photos/2.JPG" alt="">
+            <img class ="pic3" src="photos/3.JPG" alt="">   
+        </div>
+        <div id="about" data-tab-content>
+            <div class="about-sep">
+                <h1>About Adrian</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quibusdam quaerat voluptatem sed quis commodi consequatur non expedita, corrupti autem placeat et possimus ad consectetur labore cupiditate ut velit natus!</p>
+            </div>
+                <img src="photos/about_pic.jpg" alt="">
+        </div>
+        <div id="contact" data-tab-content>
+            <h1>Contact me at</h1>
+            <p>This is my new number</p>
+        </div>
     </div>
 
 </body>
