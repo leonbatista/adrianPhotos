@@ -3,19 +3,20 @@ body{
 }
 h1 {
     font-family: Raleway;
-    float: left;
-    margin-left: 15%;
-    padding-bottom: 20px;
-
 }
 
 
 .container-top{
+    position: fixed;
+    top: 0;
     display: flex;
-    margin-right: 1.5%;
+    width: 95%;
+    height: 90px;
+    background: ivory;
+ 
 }
 .box-name{
-   flex: 0.7;
+   flex: 1;
    margin-left: 1.66%;
    font-family: Raleway;
    font-weight: 800;
@@ -45,7 +46,7 @@ h1 {
     text-align: center;
     text-decoration: none;
     margin: 0;
-    margin-top: 14px;
+    margin-top: 22px;
     font-size: 20px;
     
   }
@@ -70,4 +71,37 @@ img {
 .pic3{
     width: 30%;
     float: right;
+}
+
+.home-text{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 90px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    text-align: center;
+    background-image: url("photos/home_pic.jpg");
+    background-size: cover;
+
+}
+
+.home-text h1{
+    color: white;
+    font-size: 50px;
+}
+.home-text button{
+    color: gray;
+    background-color: transparent;
+    border-color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style: groove;
+    padding: 10px;
+
+}
+
+.home-text button:hover{
+    color: white;
+    background-color: gray;
+    border-color: transparent;
 }
