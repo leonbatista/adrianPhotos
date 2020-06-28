@@ -131,6 +131,7 @@ img {
 
 #about{
     margin-top: 90px;
+    margin-right: 10px;
 }
 
 .about-container{
@@ -155,9 +156,6 @@ img {
     text-align: center;
     margin-left: 18%;
     margin-right: 18%;
-
-
-   
 }
 
 .picture-text-container{
@@ -171,7 +169,6 @@ img {
     flex: 1;
     margin: 0;
     margin-left: 10px;
-    
     padding: 0;
 }
 
@@ -185,6 +182,97 @@ img {
     text-align: center;
     margin-left: 18%;
     margin-right: 18%;
+}
+
+#contact{
+    margin-top: 90px;
+    background-color: lightgray;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
+#contact h1{
+    padding-top: 150px;
+    padding-bottom: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-bottom: 2px dashed black;
+    font-family: Raleway;
+}
+.contact-message p{
+    font-size: 30px;
+    margin-left: 300px;
+    text-align: left;
+    font-family: Raleway;
+    margin-bottom: 0;
+    margin-top: 80px;
+}
+
+.contact-flex{
+    display: flex;
+}
+
+.contact-message{
+    padding-top: 20px;
+    flex: 1;
+}
+
+#text-field{
+    font-family: Raleway;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border: transparent;
+    border-radius: 5px;
+    padding-right: 300px;
+    padding-top: 20px;
+}
+
+#text-area{
+    font-family: Raleway;
+    margin: 10px;
+    background-color: white;
+    border: transparent;
+    border-radius: 5px;
+    resize: none;
+    padding-right: 300px;
+    padding-top: 20px;
+}
+
+#sub-button{
+    font-family: Raleway;
+    background-color: lightgray;
+    color: white;
+    border: 2px solid white;
+    width: 30%;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-right: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#sub-button:hover{
+    color: white;
+    background-color: gray;
+    border: gray;
+}
+
+
+
+.contact-info{
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info img{
+    width: 885px;
+    height: 900px;
+    padding: 0;
+    margin: 0;
 }
 
 .media-links{
