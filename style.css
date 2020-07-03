@@ -120,7 +120,8 @@ img {
     border-style: groove;
     padding: 10px;
     font-family: Raleway;
-
+    outline: none;
+    cursor: pointer;
 }
 
 #home-text button:hover{
@@ -128,6 +129,7 @@ img {
     background-color: gray;
     border-color: transparent;
 }
+
 
 #about{
     margin-top: 90px;
