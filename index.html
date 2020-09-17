@@ -1,95 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Adrian Photo Blog</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js" defer></script>
-</head>
-<body>
-
-    <div class ="container-top">
-        <p class= "box-name">Adrian/Silva</p>
-        <div class= "box-tab">
-            <ul class="tabs">
-                <li data-tab-target="#contact" class="tab">Contact</li>
-                <li data-tab-target="#about" class="tab">About</li>
-                <li data-tab-target="#gallery" class="tab" id="gallerytab">Gallery</li>
-                <li data-tab-target="#home-text" class="active tab" id="hometab">Home</li>
-            </ul>
-        </div>
+  </head>
+  <body>
+    <div class="container-top">
+      <p class="box-name">Adrian/Silva</p>
+      <div class="box-tab">
+        <ul class="tabs">
+          <li data-tab-target="#contact" class="tab" id="tab">Contact</li>
+          <li data-tab-target="#about" class="tab" id="tab">About</li>
+          <li data-tab-target="#gallery" class="tab" id="gallerytab">
+            Gallery
+          </li>
+          <li data-tab-target="#home-text" class="active tab" id="hometab">
+            Home
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="tab-content">
-        <div id="home-text" data-tab-content class="active">
-          <h1>PEEK THROUGH THE LENS</h1>
-          <button type="button" id="home-button"> Show More</button>
-        </div>
-        <div id="gallery" data-tab-content>
-            <img src="photos/12.JPG" alt="">
-            <img src="photos/9.JPG" alt="">
-            <img src="photos/11.JPG" alt="">
-            <img src="photos/4.JPG" alt="">
-            <img src="photos/8.JPG" alt="">
-            <img src="photos/6.JPG" alt="">
-            <img src="photos/7.JPG" alt="">
-            <img src="photos/10.JPG" alt="">
-            <img src="photos/1.JPG" alt="">
-            <img class="pic1" src="photos/5.JPG" alt="">
-            <img class="pic2" src="photos/2.JPG" alt="">
-            <img class ="pic3" src="photos/3.JPG" alt="">   
-        </div>
-        <div id="about" data-tab-content>
-          <div class = "picture-text-container">
-                <img src="photos/about_pic.jpg" alt="">
-            <div class="about-container">
-                <h1 id="about-adrian">About Adrian</h1>
-                <p id="about-adrian-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quibusdam quaerat voluptatem sed quis commodi consequatur non expedita, corrupti autem placeat et possimus ad consectetur labore cupiditate ut velit natus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim consequuntur dicta, nam voluptate amet doloribus, facere iste neque similique, voluptatem ipsam dolores? Maiores architecto id ratione est laborum sit. Iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, explicabo repellat distinctio voluptatum voluptatem accusamus nostrum accusantium praesentium illum est consectetur nemo facere perferendis molestiae iure. Doloribus quos dolores temporibus?</p>
-                <h1 id="other-topic">Fun Facts</h1>
-                <p id="other-topic-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus modi vel ratione est, qui incidunt pariatur porro ullam sed. Velit praesentium voluptate explicabo autem illo inventore recusandae, accusantium repellendus doloremque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat asperiores temporibus, commodi aliquam soluta quisquam veniam autem! Perspiciatis necessitatibus hic repudiandae odio, pariatur similique autem dolorem eligendi, nisi impedit animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorem quod voluptatem rem nesciunt facilis vitae, sit dicta ipsam ab aperiam esse natus facere numquam corrupti, illum incidunt? Veniam, eligendi.</p>
-            </div>
+      <div id="home-text" data-tab-content class="active">
+        <h1>PEEK THROUGH THE LENS</h1>
+        <button type="button" id="home-button">Show More</button>
+      </div>
+      <div id="gallery" data-tab-content>
+        <img id="lead-image" src="photos/12.JPG" alt="" />
+        <img src="photos/9.JPG" alt="" />
+        <img src="photos/11.JPG" alt="" />
+        <img src="photos/4.JPG" alt="" />
+        <img src="photos/8.JPG" alt="" />
+        <img src="photos/6.JPG" alt="" />
+        <img src="photos/7.JPG" alt="" />
+        <img src="photos/10.JPG" alt="" />
+        <img src="photos/1.JPG" alt="" />
+        <img class="pic1" src="photos/5.JPG" alt="" />
+        <img class="pic2" src="photos/2.JPG" alt="" />
+        <img class="pic3" src="photos/3.JPG" alt="" />
+      </div>
+      <div id="about" data-tab-content>
+        <div class="picture-text-container">
+          <img id="about-image" src="photos/about_pic.jpg" alt="" />
+          <div class="about-container">
+            <h1 id="about-adrian">About Adrian</h1>
+            <p id="about-adrian-par">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              quibusdam quaerat voluptatem sed quis commodi consequatur non
+              expedita, corrupti autem placeat et possimus ad consectetur labore
+              cupiditate ut velit natus! Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Enim consequuntur dicta, nam voluptate amet
+              doloribus, facere iste neque similique, voluptatem ipsam dolores?
+              Maiores architecto id ratione est laborum sit. Iure! Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Quis, explicabo
+              repellat distinctio voluptatum voluptatem accusamus nostrum
+              accusantium praesentium illum est consectetur nemo facere
+              perferendis molestiae iure. Doloribus quos dolores temporibus?
+            </p>
+            <h1 id="other-topic">Fun Facts</h1>
+            <p id="other-topic-par">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              modi vel ratione est, qui incidunt pariatur porro ullam sed. Velit
+              praesentium voluptate explicabo autem illo inventore recusandae,
+              accusantium repellendus doloremque! Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Placeat asperiores temporibus,
+              commodi aliquam soluta quisquam veniam autem! Perspiciatis
+              necessitatibus hic repudiandae odio, pariatur similique autem
+              dolorem eligendi, nisi impedit animi. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Neque dolorem quod voluptatem rem
+              nesciunt facilis vitae, sit dicta ipsam ab aperiam esse natus
+              facere numquam corrupti, illum incidunt? Veniam, eligendi.
+            </p>
           </div>
         </div>
-        <div id="contact" data-tab-content>
-            <div class="contact-flex">
-                <div class="contact-message">
-                    <h1>Contact</h1>
-                    <p>Send me a message</p>
-                    <form action="MAILTO:leobatista0@yahoo.com" method="post" enctype="text/plain">
-                    <div>
-                    <input type="text" name="name" id="text-field" placeholder="Name*" required>
-                    </div>
-                    <div>
-                    <input type="email" name="email" id="text-field" placeholder="E-mail*" required>
-                     </div>
-                     <div>
-                    <textarea name="comment" id="text-area" cols="21" rows="2" placeholder="  Message*" required></textarea>
-                    </div>
-                    <div>
-                    <input id="sub-button" type="submit" value="Submit">
-                    </div>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <img src="photos/contact_pic.jpg" alt="">
-                </div>
-            </div>
-        
-
-
-
-
-
+      </div>
+      <div id="contact" data-tab-content>
+        <div class="contact-flex">
+          <div class="contact-message">
+            <h1>Contact</h1>
+            <p>Send me a message</p>
+            <form
+              action="MAILTO:leobatista0@yahoo.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div>
+                <input
+                  type="text"
+                  name="name"
+                  id="text-field"
+                  placeholder="Name*"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="text-field"
+                  placeholder="E-mail*"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  name="comment"
+                  id="text-area"
+                  cols="21"
+                  rows="2"
+                  placeholder="  Message*"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <input id="sub-button" type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+          <div class="contact-info">
+            <img src="photos/contact_pic.jpg" alt="" />
+          </div>
         </div>
+      </div>
     </div>
 
-        <a href="https://www.facebook.com"><img class="face-logo" src="photos/circular_facebook_logo.png" alt=""></a>
-        <a href="https://www.instagram.com/"><img class="insta-logo" src="photos/insta_logo.png" alt=""></a>
-        <a href="https://twitter.com"><img class="tweeter-logo" src="photos/circular_tweeter_logo.png" alt=""></a>
-        <p id="copyright">Copyright © 2020 Leonardo Batista. All rights reserved.</p>
-
-</body>
+    <a href="https://www.facebook.com"
+      ><img class="face-logo" src="photos/circular_facebook_logo.png" alt=""
+    /></a>
+    <a href="https://www.instagram.com/"
+      ><img class="insta-logo" src="photos/insta_logo.png" alt=""
+    /></a>
+    <a href="https://twitter.com"
+      ><img class="tweeter-logo" src="photos/circular_tweeter_logo.png" alt=""
+    /></a>
+    <p id="copyright">
+      Copyright © 2020 Leonardo Batista. All rights reserved.
+    </p>
+  </body>
 </html>
