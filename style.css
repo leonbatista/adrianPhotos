@@ -440,4 +440,38 @@ img {
   .about-container {
     padding-bottom: 80px;
   }
+  #contact {
+    padding: 0;
+    margin: 0;
+  }
+  .contact-flex {
+    padding: 0;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+  }
+  #contact h1 {
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #contact p {
+    margin: 0;
+    padding-left: 50px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  #text-field {
+    padding-right: 150px;
+  }
+  #text-area {
+    padding-right: 159px;
+  }
+  #sub-button {
+    margin-bottom: 25px;
+  }
+  .contact-info img {
+    height: 50vh;
+    width: 100%;
+  }
 }
